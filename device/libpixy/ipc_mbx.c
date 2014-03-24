@@ -174,7 +174,7 @@ void IPC_sendMsg(mbxId_t mbxNum, msg_t msg, msgId_t msgNum, mbxParam_t param) {
 	__DSB();  	
 							
 	// now trigger the remote processor
-	__sev();
+	__SEV();
 }
 
 
